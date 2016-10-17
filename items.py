@@ -1,51 +1,44 @@
-item_id = {
-    "id": "id",
+item_hammer = {
+    "id": "hammer",
 
-    "name": "id card",
-
-    "description":
-    """You new shiny student ID card. Expires 1 June 2017.
-You wonder why they have printed a suicide hotline number on it?..."""
-}
-
-item_laptop = {
-    "id": "laptop",
-
-    "name": "laptop",
+    "name": "Hammer",
 
     "description":
-    "It has seen better days. At least it has a WiFi card!"
-}
-
-item_money = {
-    "id": "money",
-
-    "name": "money",
-
-    "description":
-    "This wad of cash is barely enough to pay your tuition fees."
-}
-
-item_biscuits = {
-    "id": "biscuits",
-
-    "name": "a pack of biscuits",
-
-    "description": "A pack of biscuits."
-}
-
-item_pen = {
-    "id": "pen",
+    "after negotiation with Red, you got the hammer!!, a hammer is \n six or seven inches long, it could take someone"
     
-    "name": "a pen",
-
-    "description": "A basic ballpoint pen."
 }
 
-item_handbook = {
-    "id": "handbook",
-    
-    "name": "a student handbook",
+item_poster = {
+    "id": "poster",
 
-    "description": "This student handbook explains everything. Seriously."
+    "name": "Poster",
+
+    "description":
+    "the poster from the Warden's office, this would look great on my cell wall!!" 
+}
+
+item_Cloth = {
+    "id": "cloth",
+
+    "name": "Cloth",
+
+    "description":
+    "This Cloth is for polishing small rocks, and can be used with the rock Hammer \n to create items such as a chess set"
+
+}
+
+item_locket = {
+    "id": "locket",
+
+    "name": "Locket",
+
+    "description": "This is my wifes Locket, has no meaning to me other than monetary "
+}
+
+item_shank = {
+    "id": "shank",
+
+    "name": "Shank",
+
+    "description": "deadly "
 }

@@ -1,17 +1,13 @@
 from items import *
+from people import *
 
 room_corridor = {
     "name": "Corridor",
 
     "description":
-    """You are in a maze of twisty little passages, all alike.
-Next to you is the School of Computer Science and
-Informatics reception. The receptionist, Matt Strangis,
-seems to be playing an old school text-based adventure
-game on his computer. There are corridors leading to the
-south and east. The exit is to the west.""",
+    """You are standing at the end of the corridor. You have two options now, either go north to go to the Guard's Office, or go south to go to the Infirmary.""",
 
-    "exits": {"north": "Office", "south": "Corridor"},
+    "exits": {"north": "Office", "south": "Infirmary", "east": "Cell"},
 
     "items": []
 }
@@ -20,57 +16,49 @@ south and east. The exit is to the west.""",
 
 
 room_cell = {
-    "name": "cell",
+    "name": "Cell",
 
     "description":
-    """You are in a maze of twisty little passages, all alike.
-Next to you is the School of Computer Science and
-Informatics reception. The receptionist, Matt Strangis,
-seems to be playing an old school text-based adventure
-game on his computer. There are corridors leading to the
-south and east. The exit is to the west.""",
+    """You are in your cell. You can either go east to go to the Cafeteria, or you can go west to go to the end of the Corridor.""",
 
-    "exits": {"south": "Admins", "east": "Food", "west": "Corridor"},
+    "exits": {"east": "Food", "west": "Corridor"},
 
-    "items": [item_biscuits, item_handbook]
+    "items": []
 }
 
 room_food = {
     "name": "Cafeteria",
 
     "description":
-    """You are leaning agains the door of the systems managers'
-room. Inside you notice Matt "MJ" John and Simon Jones. They
-ignore you. To the north is the reception.""",
+    """You are in the Cafeteria. You can either go north to go to the Yard, or you can go west to go back to your cell.""",
 
-    "exits":  {"north": "Reception"},
+    "exits":  {"north": "Yard", "west": "Cell"},
 
-    "items": []
+    "items": [],
+
+    "people": [people_sisters]
 }
 
 room_office = {
     "name": "Guard's Office",
 
     "description":
-    """You are in your personal tutor's office. He intently
-stares at his huge monitor, ignoring you completely.
-On the desk you notice a cup of coffee and an empty
-pack of biscuits. The reception is to the west.""",
+    """You are in the Guard's Office. You can go south to go back to the end of the Corridor.""",
 
-    "exits": {"west": "Reception"},
+    "exits": {"south": "Corridor"},
 
-    "items": []
+    "items": [],
+
+    "people": [people_guard]
 }
 
-room_infirmory = {
-    "name": "Infirmory",
+room_infirmary = {
+    "name": "Infirmary",
 
     "description":
-    """You are standing in the Queen's Buildings parking lot.
-You can go south to the COMSC reception, or east to the
-general office.""",
+    """You are in the Infirmary. You can go north to go back to the end of the Corridor.""",
 
-    "exits": {"east": "Office", "south": "Reception"},
+    "exits": {"north": "Corridor"},
 
     "items": []
 }
@@ -79,14 +67,13 @@ room_yard = {
     "name": "Yard",
 
     "description":
-    """You are standing next to the cashier's till at
-30-36 Newport Road. The cashier looks at you with hope
-in their eyes. If you go west you can return to the
-Queen's Buildings.""",
+    """You are in the Yard. You can go south to go back to the Cafeteria.""",
 
-    "exits": {"west": "Parking"},
+    "exits": {"south": "Food"},
 
-    "items": [item_pen]
+    "items": [],
+
+    "people": [people_red]
 }
 
 
@@ -96,6 +83,6 @@ rooms = {
     "Cell": room_cell,
     "Food": room_food,
     "Office": room_office,
-    "Infirmory": room_infirmory,
+    "Infirmary": room_infirmary,
     "Yard": room_yard
 }
