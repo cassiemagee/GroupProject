@@ -4,7 +4,7 @@ item_hammer = {
     "name": "Hammer",
 
     "description":
-    "after negotiation with Red, you got the hammer!!, a hammer is \n six or seven inches long, it could take someone"
+    "Six or seven inches long, it would take time but this could do some serious damage to damp wall above the toilet."
     
 }
 
