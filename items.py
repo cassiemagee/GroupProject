@@ -17,7 +17,7 @@ item_poster = {
     "the poster from the Warden's office, this would look great on my cell wall!!" 
 }
 
-item_Cloth = {
+item_cloth = {
     "id": "cloth",
 
     "name": "Cloth",
