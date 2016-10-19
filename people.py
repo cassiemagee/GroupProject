@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 people_sisters = {
     "id": "sisters",
     
@@ -55,7 +54,7 @@ people_red = {
     """Red is the man in the prison who can get you things you need."""
 }
 
-=======
+
 people_sisters = {
     "id": "sisters",
     
@@ -83,4 +82,4 @@ people_red = {
     "description" :
     """Red is the man in the prison who can get you things you need."""
 }
->>>>>>> 6222a3887d3894374512389e9bc66913015ed50c
+
